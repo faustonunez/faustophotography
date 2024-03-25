@@ -1,0 +1,91 @@
+// import PhotoAlbum and Lightbox
+import { useState } from "react";
+import PhotoAlbum from "react-photo-album";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import { HeaderCat } from "@/components/header-category";
+import PreventImageContext from "@/components/PreventImageContext";
+import { YoutubePlayer } from "@/components/youtube-player";
+
+// import optional lightbox plugins
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
+import Counter from "yet-another-react-lightbox/plugins/counter";
+import "yet-another-react-lightbox/plugins/counter.css";
+
+// Update this import to match the new exports
+import { dominicanrepublicPhotosMappedPhotos } from "./places-images";
+
+export function DominicanrepublicPlaces() {
+  const photos = dominicanrepublicPhotosMappedPhotos.map((photo, index) => ({
+    ...photo,
+    index,
+  }));
+
+  const [index, setIndex] = useState(-1);
+
+  return (
+    <div className="w-full flex justify-center">
+      <div className="w-[80%] flex-col justify-center">
+        <HeaderCat
+          Title={"Dominican Republic"}
+          Description={
+            "It was my second visit to the Dominican Republic, and it was a treat to experience its rich culture once again. From strolling the streets of Zona Colonial in Santo Domingo to waking up to beautiful sunrises by the beach in Punta Cana, it was an experience. "
+          }
+        />
+        <div className="flex flex-col gap-20">
+          <div className="flex flex-col gap-8">
+            <h3>Santo Domingo</h3>
+            <PreventImageContext>
+              <PhotoAlbum
+                photos={photos.slice(0, 10)}
+                layout="rows"
+                targetRowHeight={600}
+                onClick={({ photo: { index } }) => setIndex(index)}
+                componentsProps={{
+                  imageProps: { loading: "lazy" },
+                  containerProps: { style: { marginBottom: 10 } },
+                }}
+                spacing={8}
+              />
+              <h3>Punta Cana</h3>
+              <PhotoAlbum
+                photos={photos.slice(11, 15)}
+                layout="rows"
+                targetRowHeight={600}
+                onClick={({ photo: { index } }) => setIndex(index)}
+                componentsProps={{
+                  imageProps: { loading: "lazy" },
+                  containerProps: { style: { marginBottom: 10 } },
+                }}
+                spacing={8}
+              />
+              <YoutubePlayer videoId="jqvIt4-wAv4" />
+              <h3>Los Haitises</h3>
+              <PhotoAlbum
+                photos={photos.slice(15, 19)}
+                layout="rows"
+                targetRowHeight={400}
+                onClick={({ photo: { index } }) => setIndex(index)}
+                componentsProps={{
+                  imageProps: { loading: "lazy" },
+                  containerProps: { style: { marginBottom: 10 } },
+                }}
+                spacing={8}
+              />
+              <Lightbox
+                slides={photos}
+                open={index >= 0}
+                index={index}
+                close={() => setIndex(-1)}
+                plugins={[Fullscreen, Slideshow, Counter]}
+                counter={{ container: { style: { top: "unset", bottom: 0 } } }}
+              />
+            </PreventImageContext>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

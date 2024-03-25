@@ -1,0 +1,319 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply font-playfair text-[48px] font-normal leading-[130%] -tracking-[0.02em]  md:text-[64px] md:leading-[130%] 3xl:text-[80px] 3xl:leading-[150%];
+  }
+  h2 {
+    @apply font-playfair 3xl:text-[64px] md:text-[48px] text-[32px]  font-normal leading-[110%] -tracking-[0.02em];
+  }
+
+  h3 {
+    @apply font-playfair text-4xl font-normal leading-[130%];
+  }
+
+  h4 {
+    @apply font-playfair text-[24px] font-normal leading-[140%];
+  }
+
+  h5 {
+    @apply font-playfair text-[24px]  3xl:text-[32px] font-normal leading-normal;
+  }
+
+  h6 {
+    @apply font-playfair text-xl font-normal leading-[100%];
+  }
+
+  p {
+    @apply font-roboto text-[16px] font-normal leading-[150%] 3xl:text-[24px];
+  }
+
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  .bg-custom {
+    @apply bg-light-text-light/10; /* Tailwind's gray background */
+    background-image: url("./public/grain.png"),
+      radial-gradient(
+        151.92% 127.02% at 15.32% 21.04%,
+        rgba(165, 239, 255, 0.8) 0%,
+        rgba(110, 191, 244, 0.18) 77.08%,
+        rgba(70, 144, 212, 0) 100%
+      );
+    background-size:
+      154.22531366348267px 154.22531366348267px,
+      auto;
+    background-repeat: repeat;
+  }
+  .main-container-spacing {
+    @apply mx-[16px] xsm:mx-[32px] lg:mx-[80px] xl:mx-[120px] 2xl:mx-[200px] 3xl:mx-[400px];
+  }
+}
+
+@layer directives {
+  @keyframes grain {
+    0%,
+    100% {
+      background-position: 0 0;
+    }
+    10% {
+      background-position: -5% -10%;
+    }
+    20% {
+      background-position: -15% 5%;
+    }
+    30% {
+      background-position: 7% -25%;
+    }
+    40% {
+      background-position: -5% 25%;
+    }
+    50% {
+      background-position: -15% 10%;
+    }
+    60% {
+      background-position: 15% 0;
+    }
+    70% {
+      background-position: 0 15%;
+    }
+    80% {
+      background-position: 3% 35%;
+    }
+    90% {
+      background-position: -10% 10%;
+    }
+  }
+
+  /* .film-dusk {
+    background-image: url("./assets/film-dust-texture.png");
+    background-repeat: repeat;
+    background-size: 300px 202px;
+  } */
+
+  .envelope-bg {
+    background-image: url("./assets/envelope-pattern.svg");
+    background-repead: repeat-x;
+  }
+
+  .grain-effect {
+    animation: grain 0.8s steps(10) infinite;
+    background-image: url("./assets/grain-image.png");
+    background-repeat: repeat;
+  }
+
+  .text-gradient {
+    --bg-size: 400%;
+    --color-one: hsl(15 90% 55%);
+    --color-two: hsl(40 95% 55%);
+
+    background: linear-gradient(
+        90deg,
+        var(--color-one),
+        var(--color-two),
+        var(--color-one)
+      )
+      0 0 / var(--bg-size) 100%;
+    animation: move-bg 8s infinite linear;
+    color: transparent;
+    background-clip: text;
+  }
+
+  @keyframes move-bg {
+    to {
+      background-position: var(--bg-size) 0;
+    }
+  }
+
+  .tilt-box-wrap {
+    width: auto;
+    height: auto;
+    position: relative;
+    transition: all 0.6s ease-out;
+    perspective: 1000px;
+  }
+  .tilt-box-wrap:hover {
+    transition: all 0.3s linear;
+    transform: scale(1.05);
+  }
+  .tilt-box {
+    width: 100%;
+    height: 100%;
+    background: #04527b;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    color: #fff;
+
+    transition: all 0.6s ease-out;
+    transform: rotateX(0deg) rotateY(0deg);
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+  .tilt-box strong {
+    transform: translateZ(40px);
+  }
+  .t_over {
+    width: 33.333%;
+    height: 33.333%;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .t_over:nth-child(1) {
+    left: 0;
+    top: 0;
+  }
+  .t_over:nth-child(2) {
+    left: 33.333%;
+    top: 0;
+  }
+  .t_over:nth-child(3) {
+    left: 66.666%;
+    top: 0;
+  }
+  .t_over:nth-child(4) {
+    left: 0;
+    top: 33.333%;
+  }
+  .t_over:nth-child(5) {
+    left: 33.333%;
+    top: 33.333%;
+  }
+  .t_over:nth-child(6) {
+    left: 66.666%;
+    top: 33.333%;
+  }
+  .t_over:nth-child(7) {
+    left: 0;
+    top: 66.666%;
+  }
+  .t_over:nth-child(8) {
+    left: 33.333%;
+    top: 66.666%;
+  }
+  .t_over:nth-child(9) {
+    left: 66.666%;
+    top: 66.666%;
+  }
+  .t_over:nth-child(1):hover ~ .tilt-box {
+    transform: rotateX(-20deg) rotateY(20deg);
+  }
+  .t_over:nth-child(2):hover ~ .tilt-box {
+    transform: rotateX(-20deg) rotateY(0deg);
+  }
+  .t_over:nth-child(3):hover ~ .tilt-box {
+    transform: rotateX(-20deg) rotateY(-20deg);
+  }
+  .t_over:nth-child(4):hover ~ .tilt-box {
+    transform: rotateX(0deg) rotateY(20deg);
+  }
+  .t_over:nth-child(5):hover ~ .tilt-box {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  .t_over:nth-child(6):hover ~ .tilt-box {
+    transform: rotateX(0deg) rotateY(-20deg);
+  }
+  .t_over:nth-child(7):hover ~ .tilt-box {
+    transform: rotateX(20deg) rotateY(20deg);
+  }
+  .t_over:nth-child(8):hover ~ .tilt-box {
+    transform: rotateX(20deg) rotateY(0deg);
+  }
+  .t_over:nth-child(9):hover ~ .tilt-box {
+    transform: rotateX(20deg) rotateY(-20deg);
+  }
+
+  .nav-link-underline::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    transition:
+      width 0.3s ease,
+      background-color 0.3s ease;
+  }
+
+  .nav-link-underline:hover::after,
+  .nav-link-active::after {
+    width: 100%;
+    background-color: #d56d0d; /* Replace with your desired color */
+  }
+
+  .video-section {
+    @apply grid grid-cols-1 xl:grid-cols-2 gap-4 mt-4;
+  }
+}
