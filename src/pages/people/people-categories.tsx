@@ -1,5 +1,3 @@
-// import PhotoAlbum and Lightbox
-import { useState } from "react";
 import "yet-another-react-lightbox/styles.css";
 import { HeaderCat } from "@/components/header-category";
 import { HorizontalCard } from "@/components/cards";

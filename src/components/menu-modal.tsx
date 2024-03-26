@@ -1,9 +1,17 @@
 import { NavLink } from "react-router-dom";
 import CloseIcon from "../assets/icon-close.svg?react";
 
-export function MenuModal({ onClose }) {
-  const getNavLinkClass = ({ isActive }) =>
-    `relative ${isActive ? " text-light-text-dark" : "text-light-text-dark hover:text-light-text-dark"} no-underline `;
+interface MenuModalProps {
+  onClose: () => void;
+}
+
+type NavLinkClassProps = {
+  isActive: boolean;
+};
+
+export function MenuModal({ onClose }: MenuModalProps) {
+  const getNavLinkClass = ({ isActive }: NavLinkClassProps) =>
+    `relative ${isActive ? "text-light-text-dark" : "text-light-text-dark hover:text-light-text-dark"} no-underline `;
 
   return (
     <div className="w-svw h-full bg-custom p-20  z-[1000] top-0 backdrop-blur-md fixed  ">

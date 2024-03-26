@@ -1,4 +1,8 @@
-export function VimeoPlayer(props) {
+interface VimeoPlayerProps {
+  videoLink: string;
+}
+
+export function VimeoPlayer(props: VimeoPlayerProps) {
   return (
     <div
       id="Video Portrait 2"
@@ -8,7 +12,7 @@ export function VimeoPlayer(props) {
       }}
     >
       <iframe
-        src={props.videoLink} // Use the videoLink prop here
+        src={props.videoLink}
         frameBorder="0"
         allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
         style={{

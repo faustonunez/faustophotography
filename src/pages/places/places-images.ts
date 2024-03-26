@@ -42,26 +42,26 @@ const newyorkPhotos: LocalPhoto[] = [
 const dominicanrepublicPhotos: LocalPhoto[] = [
 
   //hero image
-  { id: 0, name: "SD-DSCF2573.webp", width: 1280, height: 1920, alt: "Dominican Republic Photo" },
-  { id: 1, name: "SD-DSCF2589-2.webp", width: 1920, height: 1280, alt: "Dominican Republic Photo" },
-  { id: 2, name: "SD-DSCF2608.webp", width: 1280, height: 1920, alt: "Dominican Republic Photo" },
-  { id: 3, name: "SD-DSCF2729.webp", width: 1280, height: 1920, alt: "Dominican Republic Photo" },
-  { id: 4, name: "SD-DSCF2740.webp", width: 2047, height: 1280, alt: "Dominican Republic Photo" },
-  { id: 5, name: "SD-DSCF2744.webp", width: 1920, height: 1280, alt: "Dominican Republic Photo" },
-  { id: 6, name: "SD-DSCF2777.webp", width: 1280, height: 1920, alt: "Dominican Republic Photo" },
-  { id: 7, name: "SD-DSCF2785.webp", width: 1920, height: 1280, alt: "Dominican Republic Photo" },
-  { id: 8, name: "SD-DSCF2789.webp", width: 1920, height: 1280, alt: "Dominican Republic Photo" },
-  { id: 9, name: "SD-DSCF2814.webp", width: 1280, height: 1920, alt: "Dominican Republic Photo" },
-  { id: 10, name: "PC-DSCF2425.webp", width: 1920, height: 1280, alt: "Dominican Republic Photo" },
-  { id: 11, name: "PC-DSCF2482.webp", width: 1280, height: 1920, alt: "Dominican Republic Photo" },
-  { id: 12, name: "PC-DSCF2493.webp", width: 1280, height: 1920, alt: "Dominican Republic Photo" },
-  { id: 13, name: "PC-DSCF2495-2.webp", width: 1920, height: 1280, alt: "Dominican Republic Photo" },
-  { id: 14, name: "PC-DSCF2533.webp", width: 1280, height: 1920, alt: "Dominican Republic Photo" },
-  { id: 15, name: "Los-Haitises-DSCF2622.webp", width: 1920, height: 1280, alt: "Dominican Republic Photo" },
-  { id: 16, name: "Los-Haitises-DSCF2637.webp", width: 1920, height: 1280, alt: "Dominican Republic Photo" },
-  { id: 17, name: "Los-Haitises-DSCF2663.webp", width: 1920, height: 1280, alt: "Dominican Republic Photo" },
-  { id: 18, name: "Los-Haitises-DSCF2687.webp", width: 1920, height: 1280, alt: "Dominican Republic Photo" },
-  { id: 19, name: "Los-Haitises-DSCF2700.webp", width: 1920, height: 1280, alt: "Dominican Republic Photo" }
+  { name: "SD-DSCF2573.webp", width: 1280, height: 1920, alt: "Dominican Republic Photo" },
+  { name: "SD-DSCF2589-2.webp", width: 1920, height: 1280, alt: "Dominican Republic Photo" },
+  { name: "SD-DSCF2608.webp", width: 1280, height: 1920, alt: "Dominican Republic Photo" },
+  { name: "SD-DSCF2729.webp", width: 1280, height: 1920, alt: "Dominican Republic Photo" },
+  { name: "SD-DSCF2740.webp", width: 2047, height: 1280, alt: "Dominican Republic Photo" },
+  { name: "SD-DSCF2744.webp", width: 1920, height: 1280, alt: "Dominican Republic Photo" },
+  { name: "SD-DSCF2777.webp", width: 1280, height: 1920, alt: "Dominican Republic Photo" },
+  { name: "SD-DSCF2785.webp", width: 1920, height: 1280, alt: "Dominican Republic Photo" },
+  { name: "SD-DSCF2789.webp", width: 1920, height: 1280, alt: "Dominican Republic Photo" },
+  { name: "SD-DSCF2814.webp", width: 1280, height: 1920, alt: "Dominican Republic Photo" },
+  {  name: "PC-DSCF2425.webp", width: 1920, height: 1280, alt: "Dominican Republic Photo" },
+  {  name: "PC-DSCF2482.webp", width: 1280, height: 1920, alt: "Dominican Republic Photo" },
+  {  name: "PC-DSCF2493.webp", width: 1280, height: 1920, alt: "Dominican Republic Photo" },
+  {  name: "PC-DSCF2495-2.webp", width: 1920, height: 1280, alt: "Dominican Republic Photo" },
+  {  name: "PC-DSCF2533.webp", width: 1280, height: 1920, alt: "Dominican Republic Photo" },
+  {  name: "Los-Haitises-DSCF2622.webp", width: 1920, height: 1280, alt: "Dominican Republic Photo" },
+  {  name: "Los-Haitises-DSCF2637.webp", width: 1920, height: 1280, alt: "Dominican Republic Photo" },
+  {  name: "Los-Haitises-DSCF2663.webp", width: 1920, height: 1280, alt: "Dominican Republic Photo" },
+  {  name: "Los-Haitises-DSCF2687.webp", width: 1920, height: 1280, alt: "Dominican Republic Photo" },
+  {  name: "Los-Haitises-DSCF2700.webp", width: 1920, height: 1280, alt: "Dominican Republic Photo" }
 ];
 
 

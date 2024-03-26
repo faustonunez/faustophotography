@@ -1,13 +1,28 @@
-import React, { createContext, useContext, useState, useEffect } from "react";
+import {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  ReactNode,
+} from "react";
 
-const DarkModeContext = createContext();
+const DarkModeContext = createContext<{
+  darkMode: boolean;
+  setDarkMode: (value: boolean) => void;
+}>({ darkMode: false, setDarkMode: () => {} });
 
 export function useDarkMode() {
   return useContext(DarkModeContext);
 }
 
-export const DarkModeProvider = ({ children }) => {
-  const [darkMode, setDarkMode] = useState(() => {
+interface DarkModeProviderProps {
+  children: ReactNode;
+}
+
+export const DarkModeProvider: React.FC<DarkModeProviderProps> = ({
+  children,
+}) => {
+  const [darkMode, setDarkMode] = useState<boolean>(() => {
     const localData = localStorage.getItem("darkMode");
     return localData ? JSON.parse(localData) : false;
   });
