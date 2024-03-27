@@ -85,23 +85,36 @@ export function Nav({ onBurgerMenuClick }: NavProps) {
   useEffect(() => {
     const handleScroll = () => {
       const yPos = window.scrollY;
-      const isScrollingUp = yPos < lastYPos;
+      // Prevent navigation bar from hiding on overscrolling at the top
+      if (yPos < 0) return; // Early return if scrollY is negative
+
+      const isScrollingUp = yPos < lastYPos && yPos >= 0;
+
+      // Update navigation class based on scroll position
+      if (yPos > 50) {
+        // Adjust the threshold as needed
+        setNavClass(
+          "bg-light-background/100 dark:bg-dark-background/100 grain-effect"
+        );
+      } else {
+        setNavClass("bg-transparent");
+      }
 
       setShouldShowNav(isScrollingUp);
       setLastYPos(yPos);
     };
 
-    window.addEventListener("scroll", handleScroll, false);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll, false);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [lastYPos]);
 
   useEffect(() => {
     // Animate navigation bar visibility
     gsap.to(comp.current, {
-      y: shouldShowNav ? 0 : -100, // Adjust based on your nav bar's size
+      y: shouldShowNav ? 0 : -110, // Adjust based on your nav bar's size
       ease: "power1.inOut",
     });
   }, [shouldShowNav]);
