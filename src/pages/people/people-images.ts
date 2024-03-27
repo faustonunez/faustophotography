@@ -40,16 +40,16 @@ const portraitPhotos: LocalPhoto[] = [
 ];
 
 const couplePhotos: LocalPhoto[] = [
-  { name: "_N_L6034.webp", width: 1920, height: 1280, alt: "Couples Image" },
-  { name: "_N_L6019.webp", width: 1920, height: 1280, alt: "Couples Image" },
-  { name: "_N_L5992.webp", width: 1920, height: 1280, alt: "Couples Image" },
-  { name: "_N_L5956.webp", width: 1920, height: 1280, alt: "Couples Image" },
-  { name: "_N_L5874.webp", width: 1920, height: 1280, alt: "Couples Image" },
-  { name: "_N_L5792.webp", width: 1920, height: 1280, alt: "Couples Image" },
-  { name: "_N_L05012.webp", width: 1920, height: 1280, alt: "Couples Image" },
-  { name: "_N_L05010.webp", width: 1920, height: 1280, alt: "Couples Image" },
-  { name: "_N_L05007.webp", width: 1920, height: 1280, alt: "Couples Image" },
-  { name: "_N_L05003.webp", width: 1920, height: 1280, alt: "Couples Image" },
+  { name: "NL6034.webp", width: 1920, height: 1280, alt: "Couples Image" },
+  { name: "NL6019.webp", width: 1920, height: 1280, alt: "Couples Image" },
+  { name: "NL5992.webp", width: 1920, height: 1280, alt: "Couples Image" },
+  { name: "NL5956.webp", width: 1920, height: 1280, alt: "Couples Image" },
+  { name: "NL5874.webp", width: 1920, height: 1280, alt: "Couples Image" },
+  { name: "NL5792.webp", width: 1920, height: 1280, alt: "Couples Image" },
+  { name: "NL05012.webp", width: 1920, height: 1280, alt: "Couples Image" },
+  { name: "NL05010.webp", width: 1920, height: 1280, alt: "Couples Image" },
+  { name: "NL05007.webp", width: 1920, height: 1280, alt: "Couples Image" },
+  { name: "NL05003.webp", width: 1920, height: 1280, alt: "Couples Image" },
   { name: "DSCF5142.webp", width: 1280, height: 1920, alt: "Couples Image" },
   { name: "DSCF5100.webp", width: 1920, height: 1280, alt: "Couples Image" },
   { name: "DSCF5085.webp", width: 1920, height: 1280, alt: "Couples Image" },
@@ -63,10 +63,10 @@ const couplePhotos: LocalPhoto[] = [
   { name: "DSCF4712.webp", width: 1280, height: 1920, alt: "Couples Image" },
   { name: "DSCF4647.webp", width: 1920, height: 1280, alt: "Couples Image" },
   { name: "DSCF4577.webp", width: 1920, height: 1280, alt: "Couples Image" },
-  { name: "Aida_and_Steve_Outdoor-46.webp", width: 1920, height: 1280, alt: "Couples Image" },
-  { name: "Aida_and_Steve_Outdoor-32.webp", width: 1920, height: 1280, alt: "Couples Image" },
-  { name: "Aida_and_Steve_Ceremony-95.webp", width: 1920, height: 1280, alt: "Couples Image" },
-  { name: "Aida_and_Steve_Ceremony-50.webp", width: 1280, height: 1920, alt: "Couples Image" },
+  { name: "AidaandSteveOutdoor46.webp", width: 1920, height: 1280, alt: "Couples Image" },
+  { name: "AidaandSteveOutdoor32.webp", width: 1920, height: 1280, alt: "Couples Image" },
+  { name: "AidaandSteveCeremony95.webp", width: 1920, height: 1280, alt: "Couples Image" },
+  { name: "AidaandSteveCeremony50.webp", width: 1280, height: 1920, alt: "Couples Image" },
   { name: "3D1A1873.webp", width: 1920, height: 1280, alt: "Couples Image" },
   { name: "3D1A1840.webp", width: 1280, height: 1920, alt: "Couples Image" },
   { name: "3D1A1665.webp", width: 1280, height: 1920, alt: "Couples Image" },
@@ -78,51 +78,7 @@ const couplePhotos: LocalPhoto[] = [
   { name: "3D1A0142.webp", width: 1280, height: 1920, alt: "Couples Image" },
 ];
 
-//events photos
 
-const eventsPhotos: LocalPhoto[] = [
- 
-  { name: "9R0A8183.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "9R0A8187.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "9R0A8279.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "9R0A8287.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "9R0A8347.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "9R0A8354.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "9R0A8360.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "9R0A8507.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "Elon-Musk-8413.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "Elon-Musk-9562.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "Elon-Musk-9582.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "PYO-Ambient-FAUSTO-0088.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "PYO-Ambient-FAUSTO-1897.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "PYO-BLOCPOWER-FAUSTO-2183.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "PYO-Cocktail-FAUSTO-1925.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "PYO-Cocktail-FAUSTO-2047.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "PYO-Cocktail-FAUSTO-2059.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "PYO-Cocktail-FAUSTO-2087.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "PYO-Stage-FAUSTO-0172.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "PYO-Stage-FAUSTO-0209.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "PYO-Stage-FAUSTO-2164.webp", width: 1924, height: 1280, alt: "Event Image" }, // Note the width here is 1924, slightly different
-  { name: "PYO-Stage-FAUSTO-2210.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "_MG_9307.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "_MG_9316.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "_MG_9348.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "_MG_9390.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "_N_L9703.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "_N_L9771.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "_N_L9888.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "_N_L9896.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "_N_L9986.webp", width: 1920, height: 1280, alt: "Event Image" },
-  { name: "3D1A9658.webp", width: 1280, height: 1920, alt: "Event Image" },
-  { name: "3V9A4291.webp", width: 1280, height: 1920, alt: "Event Image" },
-  { name: "3V9A4332.webp", width: 1280, height: 1920, alt: "Event Image" },
-  { name: "3V9A4348.webp", width: 1280, height: 1920, alt: "Event Image" },
-  { name: "3V9A4390.webp", width: 1280, height: 1920, alt: "Event Image" },
-  { name: "3V9A4395.webp", width: 1280, height: 1920, alt: "Event Image" },
-  { name: "3V9A4571.webp", width: 1280, height: 1920, alt: "Event Image" },
-  { name: "3V9A4588.webp", width: 1280, height: 1920, alt: "Event Image" },
-  { name: "3V9A4630.webp", width: 1280, height: 1920, alt: "Event Image" },
-];
 
 
 // This mapping function is correctly defined now
@@ -136,4 +92,4 @@ const mapPhotos = (folder: string, photos: LocalPhoto[]) => photos.map(photo => 
 // Exporting both photo arrays after mapping
 export const portraitMappedPhotos = mapPhotos("portraits", portraitPhotos);
 export const coupleMappedPhotos = mapPhotos("couples", couplePhotos);
-export const eventsMappedPhotos = mapPhotos("events", eventsPhotos);
+

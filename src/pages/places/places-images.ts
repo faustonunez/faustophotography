@@ -31,9 +31,9 @@ const newyorkPhotos: LocalPhoto[] = [
   { name: "DSCF0095.webp", width: 1920, height: 1280, alt: "New York Photo" },
   { name: "TIME10ONEXT ATTENDEES-COCKTAIL-FAUSTO-1.webp", width: 1920, height: 1280, alt: "New York Photo" },
   { name: "TIME10ONEXT ATTENDEES-COCKTAIL-FAUSTO-2.webp", width: 1903, height: 1280, alt: "New York Photo" },
-  { name: "_D1A0189.webp", width: 1920, height: 1280, alt: "New York Photo" },
-  { name: "_D1A0536-2.webp", width: 1280, height: 1920, alt: "New York Photo" },
-  { name: "_D1A9669-2.webp", width: 1920, height: 1280, alt: "New York Photo" },
+  { name: "D1A0189.webp", width: 1920, height: 1280, alt: "New York Photo" },
+  { name: "D1A0536-2.webp", width: 1280, height: 1920, alt: "New York Photo" },
+  { name: "D1A9669-2.webp", width: 1920, height: 1280, alt: "New York Photo" },
 ];
 
 
