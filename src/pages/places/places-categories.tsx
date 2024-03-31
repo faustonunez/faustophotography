@@ -35,7 +35,7 @@ export function Places() {
 
   return (
     <div className="flex flex-grow justify-center z-0">
-      <div className="w-[80%]  flex-col justify-center mb-20">
+      <div className="sm:w-[80%] w-[90%]  flex-col justify-center mb-20">
         <div>
           <HeaderCat
             Title={"Places"}

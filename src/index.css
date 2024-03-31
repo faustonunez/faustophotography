@@ -295,6 +295,36 @@
     transform: rotateX(20deg) rotateY(-20deg);
   }
 
+  @media (max-width: 768px) {
+    .tilt-box-wrap,
+    .tilt-box-wrap:hover,
+    .tilt-box,
+    .tilt-box strong,
+    .t_over,
+    .t_over:nth-child(1),
+    .t_over:nth-child(2),
+    .t_over:nth-child(3),
+    .t_over:nth-child(4),
+    .t_over:nth-child(5),
+    .t_over:nth-child(6),
+    .t_over:nth-child(7),
+    .t_over:nth-child(8),
+    .t_over:nth-child(9),
+    .t_over:nth-child(1):hover ~ .tilt-box,
+    .t_over:nth-child(2):hover ~ .tilt-box,
+    .t_over:nth-child(3):hover ~ .tilt-box,
+    .t_over:nth-child(4):hover ~ .tilt-box,
+    .t_over:nth-child(5):hover ~ .tilt-box,
+    .t_over:nth-child(6):hover ~ .tilt-box,
+    .t_over:nth-child(7):hover ~ .tilt-box,
+    .t_over:nth-child(8):hover ~ .tilt-box,
+    .t_over:nth-child(9):hover ~ .tilt-box {
+      /* Reset transformations and transitions to disable the effects */
+      transform: none !important;
+      transition: none !important;
+    }
+  }
+
   .nav-link-underline::after {
     content: "";
     display: block;

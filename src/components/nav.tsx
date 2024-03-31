@@ -85,22 +85,11 @@ export function Nav({ onBurgerMenuClick }: NavProps) {
   useEffect(() => {
     const handleScroll = () => {
       const yPos = window.scrollY;
-      // Prevent navigation bar from hiding on overscrolling at the top
-      if (yPos < 0) return; // Early return if scrollY is negative
+      const isScrollingUp = yPos < lastYPos;
+      const isAtTop = yPos === 0; // Check if exactly at the top of the page
 
-      const isScrollingUp = yPos < lastYPos && yPos >= 0;
-
-      // Update navigation class based on scroll position
-      if (yPos > 50) {
-        // Adjust the threshold as needed
-        setNavClass(
-          "bg-light-background/100 dark:bg-dark-background/100 grain-effect"
-        );
-      } else {
-        setNavClass("bg-transparent");
-      }
-
-      setShouldShowNav(isScrollingUp);
+      // Show nav if at the top of the page, or if scrolling up and not at the top
+      setShouldShowNav(isAtTop || isScrollingUp);
       setLastYPos(yPos);
     };
 
@@ -124,7 +113,7 @@ export function Nav({ onBurgerMenuClick }: NavProps) {
 
   return (
     <div
-      className={`w-full flex justify-between p-[16px] xsm:p-[32px] sticky top-0 z-[500] ${navClass}`}
+      className={`w-full flex justify-between p-[32px] sm:p-[32px] sticky top-0 z-[500] ${navClass}`}
       ref={comp}
     >
       <NavLink to="/">

@@ -26,7 +26,7 @@ export function Events() {
 
   return (
     <div className="w-full flex justify-center">
-      <div className="w-[80%] flex-col justify-center">
+      <div className="sm:w-[80%] w-[90%] flex-col justify-center">
         <HeaderCat
           Title={"Events"}
           Description={
@@ -66,6 +66,9 @@ export function Events() {
                 close={() => setIndex(-1)}
                 plugins={[Fullscreen, Slideshow, Counter]}
                 counter={{ container: { style: { top: "unset", bottom: 0 } } }}
+                styles={{
+                  container: { backgroundColor: "rgba(6, 16, 24, .8)" },
+                }}
               />
             </PreventImageContext>
           </div>

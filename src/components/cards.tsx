@@ -19,7 +19,7 @@ export function HorizontalCard({
   return (
     <NavLink to={path} className={`w-1/2 h-full ${className} relative block `}>
       <div className="contaienr" id="title-6">
-        <div className="tilt-box-wrap">
+        <div className="  tilt-box-wrap ">
           <span className="t_over"></span>
           <span className="t_over"></span>
           <span className="t_over"></span>

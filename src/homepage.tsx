@@ -45,14 +45,14 @@ export function Homepage() {
 
         <div
           id="PhotoCategories"
-          className="sm:my-[80px]  flex flex-col gap-y-6 sm:gap-y-20"
+          className="sm:my-[80px]  flex flex-col gap-y-[32px] sm:gap-y-20"
         >
-          <div className="flex sm:flex-row flex-col  gap-[24px] sm:gap-[64px] md:gap-[120px] justify-center items-center ">
+          <div className="flex sm:flex-row flex-col  gap-[32px] sm:gap-[64px] md:gap-[120px] justify-center items-center ">
             <HorizontalCard
               image={PeopleImg}
               title="People"
               altText="People"
-              className="sm:w-[40%] w-[100%] h-auto"
+              className="sm:w-[40%] w-[80%] h-auto"
               path="/people" // Add the path prop here
             />
             <HorizontalCard
@@ -63,7 +63,7 @@ export function Homepage() {
               path="/places" // Add the path prop here
             />
           </div>
-          <div className="flex sm:flex-row flex-col gap-[24px] sm:gap-[64px md:gap-[120px] justify-center items-center">
+          <div className="flex sm:flex-row flex-col gap-[32px] sm:gap-[64px md:gap-[120px] justify-center items-center">
             <HorizontalCard
               image={EventsImg}
               title="Events"

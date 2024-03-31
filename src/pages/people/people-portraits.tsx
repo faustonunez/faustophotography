@@ -26,7 +26,7 @@ export function Peopleportraits() {
 
   return (
     <div className="w-full flex  justify-center">
-      <div className="w-[80%] flex-col justify-center">
+      <div className="sm:w-[80%] w-[90%] flex-col justify-center">
         <HeaderCat
           Title={"Portraits"}
           Description={
@@ -39,13 +39,17 @@ export function Peopleportraits() {
               <PhotoAlbum
                 photos={photos}
                 layout="rows"
-                targetRowHeight={600}
                 onClick={({ photo: { index } }) => setIndex(index)}
                 componentsProps={{
                   imageProps: { loading: "lazy" },
                   containerProps: { style: { marginBottom: 10 } },
                 }}
                 spacing={8}
+                targetRowHeight={(containerWidth) => {
+                  if (containerWidth < 400) return 200;
+                  if (containerWidth < 900) return 500;
+                  return 600;
+                }}
               />
 
               <Lightbox
@@ -55,6 +59,9 @@ export function Peopleportraits() {
                 close={() => setIndex(-1)}
                 plugins={[Fullscreen, Slideshow, Counter]}
                 counter={{ container: { style: { top: "unset", bottom: 0 } } }}
+                styles={{
+                  container: { backgroundColor: "rgba(6, 16, 24, .8)" },
+                }}
               />
             </PreventImageContext>
           </div>

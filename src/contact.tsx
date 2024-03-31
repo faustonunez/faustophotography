@@ -76,11 +76,11 @@ export function Contact() {
       className=" w-full   flex flex-rows justify-center mb-20 md:my-20 "
     >
       <div
-        className="  w-full max-w-[700px] flex  flex-col justify-center gap-0 mx-10 "
+        className="  w-full max-w-[700px] flex  flex-col justify-center gap-0 sm:mx-10 mx-5 "
         id="box"
       >
         <HeaderSide title={title} textContent={textContent} />
-        <div className="  w-full h-full    flex flex-col justify-center ">
+        <div className="  w-full h-full   flex flex-col justify-center ">
           <div>
             <div
               id="envelope pattern"
@@ -88,7 +88,7 @@ export function Contact() {
             ></div>
             <form
               onSubmit={handleSubmit(onSubmit)}
-              className=" flex flex-col gap-4 font-roboto w-ful bg-light-divider dark:bg-dark-divider p-10 "
+              className=" flex flex-col gap-4 font-roboto w-ful bg-light-divider dark:bg-dark-divider sm:p-10 p-4 "
             >
               <div>
                 <p className="uppercase font-semibold  text-light-text-light dark:text-dark-text-light">

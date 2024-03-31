@@ -71,7 +71,7 @@ export function About() {
         >
           <div id="title-1" className=" w-full flex justify-start mb-10  ">
             <div className="flex flex-col justify-center gap-5 w-[100%] text-left items-center">
-              <div className="w-[80%] flex flex-col justify-center items-center ">
+              <div className="sm:w-[80%] w-[90%] flex flex-col justify-center items-center ">
                 <span className="w-auto flex flex-col justify-center items-center uppercase">
                   <p>Behind The Lens</p>
                 </span>
@@ -82,7 +82,7 @@ export function About() {
               </div>
               <div
                 id="text-content"
-                className=" flex flex-col gap-10 w-[80%]  "
+                className=" flex flex-col gap-10 sm:w-[80%] w-[90%]  "
               >
                 <h5>
                   I picked up photography during my college years and fell in

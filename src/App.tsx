@@ -6,6 +6,7 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
+import { ScrollToTop } from "./components/scrolltotop";
 
 // Component Imports
 import { Nav } from "./components/nav";
@@ -36,7 +37,8 @@ function App() {
   const closeMenuModal = () => setIsMenuModalOpen(false);
 
   return (
-    <Router>
+    <Router basename="/">
+      <ScrollToTop />
       <div className="bg-light-background dark:bg-dark-background flex flex-col min-h-screen grain-effect">
         <LeftStrip className="  hidden lg:block lg:fixed left-0 " />
         <RightStrip className="   hidden lg:block lg:fixed right-0" />

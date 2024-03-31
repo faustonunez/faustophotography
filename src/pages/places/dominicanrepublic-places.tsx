@@ -27,7 +27,7 @@ export function DominicanrepublicPlaces() {
 
   return (
     <div className="w-full flex justify-center">
-      <div className="w-[80%] flex-col justify-center">
+      <div className="sm:w-[80%] w-[90%] flex-col justify-center">
         <HeaderCat
           Title={"Dominican Republic"}
           Description={
@@ -41,7 +41,11 @@ export function DominicanrepublicPlaces() {
               <PhotoAlbum
                 photos={photos.slice(0, 10)}
                 layout="rows"
-                targetRowHeight={600}
+                targetRowHeight={(containerWidth) => {
+                  if (containerWidth < 400) return 150;
+                  if (containerWidth < 900) return 200;
+                  return 500;
+                }}
                 onClick={({ photo: { index } }) => setIndex(index)}
                 componentsProps={{
                   imageProps: { loading: "lazy" },
@@ -53,7 +57,11 @@ export function DominicanrepublicPlaces() {
               <PhotoAlbum
                 photos={photos.slice(11, 15)}
                 layout="rows"
-                targetRowHeight={600}
+                targetRowHeight={(containerWidth) => {
+                  if (containerWidth < 400) return 150;
+                  if (containerWidth < 900) return 200;
+                  return 500;
+                }}
                 onClick={({ photo: { index } }) => setIndex(index)}
                 componentsProps={{
                   imageProps: { loading: "lazy" },
@@ -81,6 +89,9 @@ export function DominicanrepublicPlaces() {
                 close={() => setIndex(-1)}
                 plugins={[Fullscreen, Slideshow, Counter]}
                 counter={{ container: { style: { top: "unset", bottom: 0 } } }}
+                styles={{
+                  container: { backgroundColor: "rgba(6, 16, 24, .8)" },
+                }}
               />
             </PreventImageContext>
           </div>
