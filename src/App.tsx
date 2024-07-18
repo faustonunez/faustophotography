@@ -47,7 +47,7 @@ function App() {
             name="description"
             content="Fausto Nunez Photography: Professional photographer in NYC offering high-quality photography services. Specializing in portraits, events, and commercial photography."
           />
-          <link rel="canonical" href="/about" />
+          <link rel="canonical" href="https://faustophotography.com/#/" />
         </Helmet>
         <LeftStrip className="  hidden lg:block lg:fixed left-0 " />
         <RightStrip className="   hidden lg:block lg:fixed right-0" />

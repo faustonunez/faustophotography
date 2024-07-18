@@ -55,7 +55,7 @@ export function About() {
           name="description"
           content="Learn more about Fausto and his journey in photography."
         />
-        <link rel="canonical" href="/about" />
+        <link rel="canonical" href="https://faustophotography.com/#/About" />
       </Helmet>
       <div id="box" className="w-[20%] lg:flex  justify-center hidden ">
         <img
