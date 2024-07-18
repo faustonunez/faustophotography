@@ -41,7 +41,7 @@ export function People() {
           name="description"
           content="Photos of people category by Fausto Photography."
         />
-        <link rel="canonical" href="/people" />
+        <link rel="canonical" href="https://faustophotography.com/#/people" />
       </Helmet>
       <div className="sm:w-[80%] w-[90%] flex-col justify-center mb-20">
         <div>

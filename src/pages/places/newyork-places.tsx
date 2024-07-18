@@ -34,7 +34,10 @@ export function NewyorkPlaces() {
           name="description"
           content="A collection of photos of New York City by Fausto Photography."
         />
-        <link rel="canonical" href="/place/newyork" />
+        <link
+          rel="canonical"
+          href="https://faustophotography.com/#/place/newyork"
+        />
       </Helmet>
       <div className="sm:w-[80%] w-[90%] flex-col justify-center">
         <HeaderCat

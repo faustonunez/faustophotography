@@ -35,7 +35,10 @@ export function DominicanrepublicPlaces() {
           name="description"
           content="A collection of photos of the Dominican Republic by Fausto Photography."
         />
-        <link rel="canonical" href="/place/dominicanrepublic" />
+        <link
+          rel="canonical"
+          href="https://faustophotography.com/#/place/dominicanrepublic"
+        />
       </Helmet>
       <div className="sm:w-[80%] w-[90%] flex-col justify-center">
         <HeaderCat

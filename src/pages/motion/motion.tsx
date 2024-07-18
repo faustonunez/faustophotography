@@ -12,7 +12,7 @@ export function Motion() {
           name="description"
           content="Gallery of video projects by Fausto Photography."
         />
-        <link rel="canonical" href="/about" />
+        <link rel="canonical" href="https://faustophotography.com/#/motion" />
       </Helmet>
       <div className="w-[80%] flex flex-col justify-center">
         <HeaderCat

@@ -34,7 +34,10 @@ export function Peoplecouples() {
           name="description"
           content="A collection of photos of couples by Fausto Photography."
         />
-        <link rel="canonical" href="/people/couples" />
+        <link
+          rel="canonical"
+          href="https://faustophotography.com/#/people/couples"
+        />
       </Helmet>
       <div className="sm:w-[80%] w-[90%] flex-col justify-center">
         <HeaderCat

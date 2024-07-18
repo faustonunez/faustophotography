@@ -43,7 +43,7 @@ export function Places() {
           name="description"
           content="A collection of places by Fausto Photography."
         />
-        <link rel="canonical" href="/places" />
+        <link rel="canonical" href="https://faustophotography.com/#/places" />
       </Helmet>
       <div className="sm:w-[80%] w-[90%]  flex-col justify-center mb-20">
         <div>

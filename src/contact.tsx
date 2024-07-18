@@ -82,7 +82,7 @@ export function Contact() {
           name="description"
           content="Get in touch with Fausto Photography"
         />
-        <link rel="canonical" href="/contact" />
+        <link rel="canonical" href="https://faustophotography.com/#/contact" />
       </Helmet>
       <div
         className="  w-full max-w-[700px] flex  flex-col justify-center gap-0 sm:mx-10 mx-5 "

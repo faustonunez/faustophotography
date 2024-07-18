@@ -34,7 +34,10 @@ export function Peopleportraits() {
           name="description"
           content="A collection of portrait photos by Fausto Photography."
         />
-        <link rel="canonical" href="/people/portraits" />
+        <link
+          rel="canonical"
+          href="https://faustophotography.com/#/people/portraits"
+        />
       </Helmet>
       <div className="sm:w-[80%] w-[90%] flex-col justify-center">
         <HeaderCat

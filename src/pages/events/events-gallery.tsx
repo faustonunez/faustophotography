@@ -35,7 +35,7 @@ export function Events() {
           name="description"
           content="A collection of photos from various events captured by Fausto Photography."
         />
-        <link rel="canonical" href="/events" />
+        <link rel="canonical" href="https://faustophotography.com/#/events" />
       </Helmet>
       <div className="sm:w-[80%] w-[90%] flex-col justify-center">
         <HeaderCat
