@@ -11,6 +11,7 @@ import Swal from "sweetalert2";
 import { useRef } from "react";
 import gsap from "gsap"; // <-- import GSAP
 import { useGSAP } from "@gsap/react"; // <-- import the hook from our React package
+import { Helmet } from "react-helmet-async";
 
 const SERVICE_ID = "service_5yuatnj";
 const TEMPLATE_ID = "template_g04he79";
@@ -75,6 +76,14 @@ export function Contact() {
       ref={container}
       className=" w-full   flex flex-rows justify-center mb-20 md:my-20 "
     >
+      <Helmet>
+        <title>Let's Connect</title>{" "}
+        <meta
+          name="description"
+          content="Get in touch with Fausto Photography"
+        />
+        <link rel="canonical" href="/contact" />
+      </Helmet>
       <div
         className="  w-full max-w-[700px] flex  flex-col justify-center gap-0 sm:mx-10 mx-5 "
         id="box"

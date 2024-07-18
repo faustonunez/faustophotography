@@ -6,6 +6,7 @@ import CouplesImg from "../../assets/images/people/_people-sections/people-coupl
 import StoriesImg from "../../assets/images/people/_people-sections/people-stories-2.webp";
 import { gsap } from "gsap";
 import { useLayoutEffect, useRef } from "react";
+import { Helmet } from "react-helmet-async";
 
 // import optional lightbox plugins
 import "yet-another-react-lightbox/plugins/thumbnails.css";
@@ -34,6 +35,14 @@ export function People() {
 
   return (
     <div className=" flex flex-grow justify-center z-0">
+      <Helmet>
+        <title>People</title>
+        <meta
+          name="description"
+          content="Photos of people category by Fausto Photography."
+        />
+        <link rel="canonical" href="/people" />
+      </Helmet>
       <div className="sm:w-[80%] w-[90%] flex-col justify-center mb-20">
         <div>
           <HeaderCat

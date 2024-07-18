@@ -1,10 +1,19 @@
 import { HeaderCat } from "@/components/header-category";
 import { YoutubePlayer } from "@/components/youtube-player";
 import { VimeoPlayer } from "@/components/vimeo-player";
+import { Helmet } from "react-helmet-async";
 
 export function Motion() {
   return (
     <div className="w-full flex justify-center">
+      <Helmet>
+        <title>Motion</title>
+        <meta
+          name="description"
+          content="Gallery of video projects by Fausto Photography."
+        />
+        <link rel="canonical" href="/about" />
+      </Helmet>
       <div className="w-[80%] flex flex-col justify-center">
         <HeaderCat
           Title={"Motion"}

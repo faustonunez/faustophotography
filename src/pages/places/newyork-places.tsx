@@ -16,6 +16,8 @@ import "yet-another-react-lightbox/plugins/counter.css";
 // Update this import to match the new exports
 import { newyorkMappedPhotos } from "./places-images";
 
+import { Helmet } from "react-helmet-async";
+
 export function NewyorkPlaces() {
   const photos = newyorkMappedPhotos.map((photo, index) => ({
     ...photo,
@@ -26,6 +28,14 @@ export function NewyorkPlaces() {
 
   return (
     <div className="w-full flex justify-center">
+      <Helmet>
+        <title>New York City</title>
+        <meta
+          name="description"
+          content="A collection of photos of New York City by Fausto Photography."
+        />
+        <link rel="canonical" href="/place/newyork" />
+      </Helmet>
       <div className="sm:w-[80%] w-[90%] flex-col justify-center">
         <HeaderCat
           Title={"New York"}

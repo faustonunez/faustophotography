@@ -16,6 +16,8 @@ import "yet-another-react-lightbox/plugins/counter.css";
 // Update this import to match the new exports
 import { portraitMappedPhotos } from "./people-images";
 
+import { Helmet } from "react-helmet-async";
+
 export function Peopleportraits() {
   const photos = portraitMappedPhotos.map((photo, index) => ({
     ...photo,
@@ -26,6 +28,14 @@ export function Peopleportraits() {
 
   return (
     <div className="w-full flex  justify-center">
+      <Helmet>
+        <title>People Portraits</title>
+        <meta
+          name="description"
+          content="A collection of portrait photos by Fausto Photography."
+        />
+        <link rel="canonical" href="/people/portraits" />
+      </Helmet>
       <div className="sm:w-[80%] w-[90%] flex-col justify-center">
         <HeaderCat
           Title={"Portraits"}

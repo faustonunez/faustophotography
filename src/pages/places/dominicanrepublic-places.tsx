@@ -17,6 +17,8 @@ import "yet-another-react-lightbox/plugins/counter.css";
 // Update this import to match the new exports
 import { dominicanrepublicPhotosMappedPhotos } from "./places-images";
 
+import { Helmet } from "react-helmet-async";
+
 export function DominicanrepublicPlaces() {
   const photos = dominicanrepublicPhotosMappedPhotos.map((photo, index) => ({
     ...photo,
@@ -27,6 +29,14 @@ export function DominicanrepublicPlaces() {
 
   return (
     <div className="w-full flex justify-center">
+      <Helmet>
+        <title>Dominican Republic</title>
+        <meta
+          name="description"
+          content="A collection of photos of the Dominican Republic by Fausto Photography."
+        />
+        <link rel="canonical" href="/place/dominicanrepublic" />
+      </Helmet>
       <div className="sm:w-[80%] w-[90%] flex-col justify-center">
         <HeaderCat
           Title={"Dominican Republic"}

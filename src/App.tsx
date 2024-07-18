@@ -29,6 +29,7 @@ import { Peopleportraits } from "./pages/people/people-portraits";
 import { Peoplecouples } from "./pages/people/people-couples";
 import { NewyorkPlaces } from "./pages/places/newyork-places";
 import { DominicanrepublicPlaces } from "./pages/places/dominicanrepublic-places";
+import { Helmet } from "react-helmet-async";
 
 function App() {
   const [isMenuModalOpen, setIsMenuModalOpen] = useState(false);
@@ -40,6 +41,14 @@ function App() {
     <Router basename="/">
       <ScrollToTop />
       <div className="bg-light-background dark:bg-dark-background flex flex-col min-h-screen grain-effect">
+        <Helmet>
+          <title>Fausto Photography</title>
+          <meta
+            name="description"
+            content="Fausto Nunez Photography: Professional photographer in NYC offering high-quality photography services. Specializing in portraits, events, and commercial photography."
+          />
+          <link rel="canonical" href="/about" />
+        </Helmet>
         <LeftStrip className="  hidden lg:block lg:fixed left-0 " />
         <RightStrip className="   hidden lg:block lg:fixed right-0" />
         <Nav onBurgerMenuClick={toggleMenuModal} />

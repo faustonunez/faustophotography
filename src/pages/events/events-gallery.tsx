@@ -16,6 +16,9 @@ import "yet-another-react-lightbox/plugins/counter.css";
 // Update this import to match the new exports
 import { eventsMappedPhotos } from "./events-images";
 
+// React Helmet
+import { Helmet } from "react-helmet-async";
+
 export function Events() {
   const photos = eventsMappedPhotos.map((photo, index) => ({
     ...photo,
@@ -26,6 +29,14 @@ export function Events() {
 
   return (
     <div className="w-full flex justify-center">
+      <Helmet>
+        <title>Events</title>
+        <meta
+          name="description"
+          content="A collection of photos from various events captured by Fausto Photography."
+        />
+        <link rel="canonical" href="/events" />
+      </Helmet>
       <div className="sm:w-[80%] w-[90%] flex-col justify-center">
         <HeaderCat
           Title={"Events"}

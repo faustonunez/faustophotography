@@ -7,6 +7,7 @@ import { useRef } from "react";
 import gsap from "gsap"; // <-- import GSAP
 import { useGSAP } from "@gsap/react"; // <-- import the hook from our React package
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Helmet } from "react-helmet-async";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(useGSAP);
@@ -48,6 +49,14 @@ export function About() {
       ref={container}
       className=" w-full h-full flex flex-rows justify-center items-center mb-10 sm:my-20 "
     >
+      <Helmet>
+        <title>About Fausto</title>
+        <meta
+          name="description"
+          content="Learn more about Fausto and his journey in photography."
+        />
+        <link rel="canonical" href="/about" />
+      </Helmet>
       <div id="box" className="w-[20%] lg:flex  justify-center hidden ">
         <img
           src={faustoImg1}

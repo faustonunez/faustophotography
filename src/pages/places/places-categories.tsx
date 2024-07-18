@@ -11,6 +11,8 @@ import { useLayoutEffect, useRef } from "react";
 // import optional lightbox plugins
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
+import { Helmet } from "react-helmet-async";
+
 export function Places() {
   const comp = useRef(null);
 
@@ -35,6 +37,14 @@ export function Places() {
 
   return (
     <div className="flex flex-grow justify-center z-0">
+      <Helmet>
+        <title>Places</title>
+        <meta
+          name="description"
+          content="A collection of places by Fausto Photography."
+        />
+        <link rel="canonical" href="/places" />
+      </Helmet>
       <div className="sm:w-[80%] w-[90%]  flex-col justify-center mb-20">
         <div>
           <HeaderCat
