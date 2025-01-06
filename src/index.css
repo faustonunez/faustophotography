@@ -162,7 +162,7 @@
 
   .envelope-bg {
     background-image: url("./assets/envelope-pattern.svg");
-    background-repead: repeat-x;
+    background-repeat: repeat-x;
   }
 
   .grain-effect {

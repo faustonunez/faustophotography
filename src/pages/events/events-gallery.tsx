@@ -47,8 +47,34 @@ export function Events() {
         <div className="flex flex-col gap-20">
           <div className="flex flex-col gap-[8px]">
             <PreventImageContext>
+              <h2 className=" mt-10 mb-4">TIME POY 2021</h2>
               <PhotoAlbum
-                photos={photos.slice(0, 2)}
+                photos={photos.slice(0, 11)}
+                layout="rows"
+                targetRowHeight={300}
+                onClick={({ photo: { index } }) => setIndex(index)}
+                componentsProps={{
+                  imageProps: { loading: "lazy" },
+                  containerProps: { style: { marginBottom: 10 } },
+                }}
+                spacing={8}
+              />
+              <h2 className=" mt-10 mb-4">TIME POY 2022</h2>
+              <PhotoAlbum
+                photos={photos.slice(12, 22)}
+                layout="rows"
+                targetRowHeight={300}
+                onClick={({ photo: { index } }) => setIndex(index)}
+                componentsProps={{
+                  imageProps: { loading: "lazy" },
+                  containerProps: { style: { marginBottom: 10 } },
+                }}
+                spacing={8}
+              />
+
+              <h2 className=" mt-10 mb-4">L'OReal Luxe</h2>
+              <PhotoAlbum
+                photos={photos.slice(23, 25)}
                 layout="rows"
                 targetRowHeight={300}
                 onClick={({ photo: { index } }) => setIndex(index)}
@@ -59,7 +85,30 @@ export function Events() {
                 spacing={8}
               />
               <PhotoAlbum
-                photos={photos.slice(2, 41)}
+                photos={photos.slice(25, 31)}
+                layout="rows"
+                targetRowHeight={300}
+                onClick={({ photo: { index } }) => setIndex(index)}
+                componentsProps={{
+                  imageProps: { loading: "lazy" },
+                  containerProps: { style: { marginBottom: 10 } },
+                }}
+                spacing={8}
+              />
+              <h2 className=" mt-10 mb-4">Fashion Week</h2>
+              <PhotoAlbum
+                photos={photos.slice(32, 35)}
+                layout="rows"
+                targetRowHeight={300}
+                onClick={({ photo: { index } }) => setIndex(index)}
+                componentsProps={{
+                  imageProps: { loading: "lazy" },
+                  containerProps: { style: { marginBottom: 10 } },
+                }}
+                spacing={8}
+              />
+              <PhotoAlbum
+                photos={photos.slice(35, 40)}
                 layout="rows"
                 targetRowHeight={300}
                 onClick={({ photo: { index } }) => setIndex(index)}
